@@ -1,0 +1,21 @@
+before_script:
+    - date
+    - uname -p
+    - uname -s
+    - printenv | sort
+
+gcc:
+    image: gpdowning/gcc
+    script:
+    - cat Makefile
+    - make versions
+    - ls -al
+    - make test
+    - ls -al
+    - make ../cs371p-allocator-tests
+    - ls -al ../cs371p-allocator-tests/
+    - ls -al
+    - make run
+    - ls -al
+    - make check
+    - ls -al

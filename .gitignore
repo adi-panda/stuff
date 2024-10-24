@@ -1,0 +1,9 @@
+.DS_Store
+*.gcda
+*.gcno
+*.tmp.txt
+cs371p-allocator.bbprojectd
+Doxyfile
+latex
+run_Allocator
+test_Allocator
